@@ -1,0 +1,39 @@
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer__link {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0.3;
+  text-decoration: none;
+}
+
+.footer__legal,
+.footer__contact,
+.footer__admin {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+  .footer__link {
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 0;
+  }
+}

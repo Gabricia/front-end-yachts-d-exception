@@ -1,0 +1,71 @@
+/* about section styling */
+
+.apropos__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+}
+
+.left {
+  width: 45%;
+}
+.apropos__img {
+  height: 400px;
+  width: 400px;
+  background: url("../img/profil.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 6px;
+}
+.right {
+  width: 55%;
+}
+.apropos__text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.apropos__text span {
+  color: var(--color-primary);
+}
+.apropos__paragraph {
+  text-align: justify;
+}
+.apropos__button {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid var(--color-primary);
+  transition: all 0.3s ease;
+}
+.apropos__button:hover {
+  color: var(--color-primary);
+  background: none;
+}
+
+@media (max-width: 1104px) {
+  .apropos__img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 947px) {
+  .apropos__column {
+    width: 100%;
+  }
+  .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .right {
+    flex: 100%;
+  }
+}

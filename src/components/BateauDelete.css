@@ -1,0 +1,29 @@
+.bateaudelete__button {
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.bateaudelete__button:hover {
+  background: none;
+}
+
+.button--delete {
+  background: var(--color-red-delete);
+  border: 2px solid var(--color-red-delete);
+}
+.button--delete:hover {
+  color: var(--color-red-delete);
+}
+.button--cancel {
+  background: var(--color-grey-dark-1);
+  border: 2px solid var(--color-grey-dark-1);
+}
+.button--cancel:hover {
+  color: var(--color-grey-dark-1);
+}

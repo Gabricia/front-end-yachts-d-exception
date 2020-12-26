@@ -1,0 +1,97 @@
+/* home section styling */
+.header__section {
+  display: flex;
+  background: url("../img/banner.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header__content {
+  position: absolute;
+  top: 300px;
+  left: 200px;
+}
+.header__section .max-width {
+  margin: auto 0 auto 30px;
+}
+.header__text-1 {
+  font-size: 27px;
+}
+.header__text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.header__text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+.header__text-3 span {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+.header__button {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid var(--color-primary);
+  transition: all 0.3s ease;
+}
+.header__button:hover {
+  color: var(--color-primary);
+  background: none;
+}
+@media (max-width: 1300px) {
+  .header__section {
+    margin-left: 0px;
+  }
+
+  .header__content {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 947px) {
+  .header__text-2 {
+    font-size: 70px;
+  }
+  .header__text-3 {
+    font-size: 35px;
+  }
+  .header__button {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 690px) {
+  .header__text-2 {
+    font-size: 60px;
+  }
+  .header__text-3 {
+    font-size: 32px;
+  }
+  .header__button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__text-2 {
+    font-size: 50px;
+  }
+  .header__text-3 {
+    font-size: 27px;
+  }
+}

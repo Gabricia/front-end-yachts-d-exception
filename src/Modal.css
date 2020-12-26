@@ -1,0 +1,32 @@
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.95;
+}
+
+.modal__container {
+  position: absolute;
+  /* width: 350px; */
+  padding: 20px;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-grey-light-1);
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.modal__header {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.modal__actions {
+  display: flex;
+  justify-content: space-between;
+}

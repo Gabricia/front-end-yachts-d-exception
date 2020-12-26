@@ -1,0 +1,97 @@
+.admin {
+  height: 100vh;
+  background: url("https://www.luxury-design.com/wp-content/uploads/2013/11/3700-Fly_KADIMOS-01_300dpi-01.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.admin__logo {
+  position: absolute;
+  top: 35px;
+  left: 100px;
+  object-fit: contain;
+  min-width: 80px;
+}
+
+.admin__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.85);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.admin__container h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.admin__input {
+  position: relative;
+}
+
+.admin__input input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  background: transparent;
+}
+
+.admin__input label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #ffffff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.admin__input input:focus ~ label,
+.admin__input input:valid ~ label {
+  top: -18px;
+  left: 0;
+  color: #009688;
+  font-size: 12px;
+}
+
+.admin__button {
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin: 10px 75px;
+  border-radius: 6px;
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin__button:hover {
+  color: var(--color-primary);
+  background: none;
+}
+
+@media screen and (max-width: 600px) {
+  .admin__container {
+    width: 350px;
+  }
+  .admin__button {
+    margin: 10px 55px;
+  }
+}

@@ -1,0 +1,44 @@
+.mentionslegales {
+  background: url("https://www.luxury-design.com/wp-content/uploads/2013/11/3700-Fly_KADIMOS-01_300dpi-01.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.mentionslegales__container {
+  padding-top: 120px;
+  text-align: justify;
+  padding-bottom: 40px;
+}
+
+.mentionslegales__content {
+  background-color: var(--color-grey-light-1);
+  opacity: 0.9;
+  border-radius: 3px;
+}
+
+.mentionslegales__content > * {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.mentionslegales__content:last-child {
+  padding-bottom: 30px;
+}
+
+.mentionslegales__list {
+  list-style: none;
+}
+
+/* @media screen and (max-width: 1200px) {
+  .mentionslegales__content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mentionslegales__content {
+    margin: 20px auto;
+    font-size: 12px;
+  }
+} */

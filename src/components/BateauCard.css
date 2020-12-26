@@ -1,0 +1,77 @@
+.bateaucard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 350px;
+  /* padding: 2rem; */
+  background-color: white;
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+  transition: 200ms ease-in;
+  cursor: pointer;
+  color: var(--color-grey-dark-1);
+}
+
+.bateaucard:hover {
+  transform: scale(1.04);
+}
+
+.bateaucard__img {
+  width: 100%;
+  padding: 0;
+  height: 200px;
+  margin-bottom: 1.5rem;
+}
+.bateaucard__info {
+  width: 100%;
+  padding: 10px;
+}
+
+.bateaucard__model {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.bateaucard__infoDetail {
+  font-size: 16px;
+  margin: 0 0 0 !important;
+}
+
+.bateaucard__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.bateaucard__buttonEdit {
+  background-color: orange;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid orange;
+}
+.bateaucard__buttonEdit:hover {
+  color: orange;
+  background: none;
+}
+
+.bateaucard__buttonDelete {
+  background-color: red;
+  border: 2px solid red;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+.bateaucard__buttonDelete:hover {
+  color: red;
+  background: none;
+}

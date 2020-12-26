@@ -1,0 +1,37 @@
+.homeproduct__section {
+  font-family: "Poppins", sans-serif;
+}
+
+.homeproduct__carousel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeproduct__carousel > * {
+  margin: 10px;
+}
+
+.homeproduct__button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin: 20px auto;
+  border-radius: 6px;
+  border: 2px solid var(--color-primary);
+  transition: all 0.3s ease;
+}
+.homeproduct__button:hover {
+  color: var(--color-primary);
+  background: none;
+}
+
+@media (max-width: 900px) {
+  .homeproduct__carousel {
+    flex-direction: column;
+  }
+}

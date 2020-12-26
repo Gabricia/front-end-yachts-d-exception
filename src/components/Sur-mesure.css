@@ -1,0 +1,94 @@
+.surmesure {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--color-grey-dark-3);
+  text-align: justify;
+  color: var(--color-grey-light-4);
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 1);
+}
+
+.surmesure__header {
+  width: 100%;
+  display: flex;
+  color: var(--color-grey-light-1);
+  background: url("http://www.yachts-exception.com/img/confection/yacht-exception-header-about.jpg")
+    no-repeat center;
+  background-size: cover;
+  margin: 50px auto;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.surmesure__header--left {
+  flex: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.surmesure__header--right {
+  padding: 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.surmesure__headerTitle {
+  width: 350px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.surmesure__headerParagraph {
+  width: 400px;
+  padding-top: 20px;
+  font-weight: 600;
+}
+
+.surmesure__bateaux {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.surmesure__button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin: 20px auto;
+  border-radius: 6px;
+  border: 2px solid var(--color-primary);
+  transition: all 0.3s ease;
+}
+.surmesure__button:hover {
+  color: var(--color-primary);
+  background: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .surmesure__bateaux {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .surmesure__headerParagraph {
+    width: 350px;
+  }
+  .surmesure__header--right {
+    padding: 20px;
+  }
+  .surmesure__button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .surmesure__headerParagraph,
+  .surmesure__headerTitle {
+    width: 100%;
+  }
+  .surmesure__header--right {
+    padding: 10px;
+  }
+}

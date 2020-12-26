@@ -1,0 +1,123 @@
+.aboutus {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: var(--color-grey-dark-3);
+  text-align: justify;
+  color: var(--color-grey-light-1);
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 1);
+}
+
+.aboutus__header {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  color: var(--color-grey-light-1);
+  background: url("http://www.yachts-exception.com/img/confection/yacht-exception-header-about.jpg")
+    no-repeat center;
+  background-size: cover;
+  margin: 50px auto;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+.aboutus__header--left {
+  flex: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.aboutus__header--right {
+  padding: 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.aboutus__headerTitle {
+  width: 350px;
+  text-align: center;
+}
+.aboutus__headerDescription {
+  width: 400px;
+  padding-top: 20px;
+  font-weight: 600;
+}
+
+.aboutus__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 450px);
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.aboutus__content--1,
+.aboutus__content--4,
+.aboutus__content--5,
+.aboutus__content--8 {
+  padding: 10px;
+}
+.aboutus__content--2,
+.aboutus__content--3,
+.aboutus__content--6,
+.aboutus__content--7 {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.aboutus__content--2 {
+  background: url("https://www.luxury-design.com/wp-content/uploads/2013/11/3700-Fly_KADIMOS-01_300dpi-01.jpg")
+    no-repeat center;
+  background-size: cover;
+  border-radius: 6px;
+}
+.aboutus__content--3 {
+  background: url("https://images.pexels.com/photos/275637/pexels-photo-275637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center;
+  background-size: cover;
+  border-radius: 6px;
+}
+.aboutus__content--6 {
+  background: url("https://images.pexels.com/photos/5028942/pexels-photo-5028942.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center;
+  background-size: cover;
+  border-radius: 6px;
+}
+.aboutus__content--7 {
+  background: url("https://images.pexels.com/photos/386020/pexels-photo-386020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center;
+  background-size: cover;
+  border-radius: 6px;
+}
+
+.aboutus__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus__sectionDescription {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .aboutus__container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, auto);
+    row-gap: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .aboutus__headerDescription {
+    width: 350px;
+  }
+  .aboutus__header--right {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .aboutus__headerDescription,
+  .aboutus__headerTitle {
+    width: 100%;
+  }
+  .aboutus__header--right {
+    padding: 10px;
+  }
+}

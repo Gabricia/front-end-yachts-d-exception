@@ -1,0 +1,14 @@
+.bateaucreate {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 20px;
+  padding-top: 120px;
+  border-radius: 3px;
+  box-shadow: 2px 3px 10px (0, 0, 0, 1);
+}
+
+.bateaucreate__title {
+  text-align: center;
+  font-size: 30px;
+}
